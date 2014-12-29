@@ -119,11 +119,12 @@ header .background{
     bottom: 0px;
     position: absolute;;
     width:100%;
-    height:85%;
+    height:100%;
 }
 header img {
     display: block;
     margin: 0 auto 20px;
+    top:20px;
 }
 
 @font-face {
@@ -131,6 +132,13 @@ header img {
     font-style: normal;
     font-weight: 400;
     src: local("Vidaloka "), local("Vidaloka-Regular"), url("http://fonts.gstatic.com/s/vidaloka/v8/ggtjDKUwkCAXpO92rmcBQPesZW2xOQ-xsNqO47m55DA.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lobster'),local("Lobster-Regular"), url('http://themes.googleusercontent.com/static/fonts/lobster/v4/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
 }
 
 header .intro-text .name {
@@ -224,9 +232,22 @@ section.success {
     background: #18bc9c;
 }
 
+#about .container
+{
+
+    height:500px;
+    margin-bottom: 7%;
+}
+
+.ourView h3
+{
+    font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+    margin-bottom: 30px;
+}
 @media(max-width:767px) {
     section {
         padding: 75px 0;
+
     }
 
     section.first {
@@ -234,9 +255,16 @@ section.success {
     }
 }
 
+#portfolio
+{
+    margin-top:18%;
+
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -290,6 +318,9 @@ section.success {
         margin: 0 0 30px;
     }
 }
+
+
+
 
 .btn-outline {
     margin-top: 15px;
